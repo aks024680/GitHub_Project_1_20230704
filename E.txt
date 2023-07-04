@@ -1,0 +1,16 @@
+
+bool targetCollision;
+float time = 0f;
+float PanelX,PanelZ;
+
+Rigidbody rb;
+
+public Transform target;
+public Transform floor;
+
+private void Start(){
+  rb = GetComponent<Rigidbody>();
+}
+private void Update(){
+  time += Time.deltaTime;
+}
