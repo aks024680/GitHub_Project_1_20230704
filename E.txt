@@ -14,4 +14,8 @@ private void Start(){
 private void Update(){
   time += Time.deltaTime;
 }
-public void CollectObserveration
+public void CollectObservations(Vectorsensor sensor){
+  sensor.AddObservation(target.localPosition);
+  sensor.AddObservation(this.transform.localPosition)
+  sensor.AddObservation(floor.localPosition);
+}
